@@ -1,2 +1,2 @@
 # busca_cep
- Programa feito para buscar endereço através do cep
+ Programa onde utilizo a API https://viacep.com.br/ para buscar endereço através do cep 
