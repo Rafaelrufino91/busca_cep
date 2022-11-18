@@ -4,13 +4,13 @@ from tkinter import *
 class main:
     def __init__(self, master=None):
         self.resultado = Frame(master)
-        self.resultado["pady"] = 5
+        self.resultado["pady"] = 30
         self.resultado.pack()
 
         self.tela = Frame(master)
         self.tela.pack()
 
-        self.titulo = Label(self.tela, text='Digite o cep', font='Arial')
+        self.titulo = Label(self.tela, text='Digite o cep', font=('Arial',20))
         self.titulo.pack()
 
         self.cep = Entry(self.tela)
