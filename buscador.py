@@ -10,7 +10,7 @@ class main:
         self.tela = Frame(master)
         self.tela.pack()
 
-        self.titulo = Label(self.tela, text='Digite o cep')
+        self.titulo = Label(self.tela, text='Digite o cep', font='Arial')
         self.titulo.pack()
 
         self.cep = Entry(self.tela)
@@ -25,18 +25,19 @@ class main:
         self.msg = Label(self.resultado, text="", font="Arial")
         self.msg.pack()
     
-    #metodo consulta cep
+    #consulta cep
     def ConsultaCep(self):
         cep_corrigido = ''
         cep = self.cep.get()
-        for l in cep:
-            if l.isnumeric():
-                cep_corrigido += l
-        while True:
-            if len(cep_corrigido) < 8:
-                cep_corrigido += '0'
-            elif len(cep_corrigido) == 8:
-                break
+        if len(cep) <= 8:
+            for l in cep:
+                if l.isnumeric():
+                    cep_corrigido += l
+            while True:
+                if len(cep_corrigido) < 8:
+                    cep_corrigido += '0'
+                elif len(cep_corrigido) == 8:
+                    break 
         try:
             requisicao = requests.get(f'http://viacep.com.br/ws/{cep_corrigido}/json/')
             endereco = requisicao.json()
@@ -44,10 +45,11 @@ class main:
                 rua = endereco['logradouro']
                 uf = endereco['uf']
                 cidade = endereco['localidade']
-                self.msg["text"] = rua+uf+cidade
-        except KeyError:
+                self.msg["text"] = (rua+', '+uf+'\n'+cidade)
+        except Exception:
             self.msg["text"] = "Cep não encontrado ou inválido"
 
 root = Tk()
 main(root)
+root.geometry("300x300")
 root.mainloop()
