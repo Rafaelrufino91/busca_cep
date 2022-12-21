@@ -4,14 +4,14 @@
  
  Nele eu utilizei a API VIACEP para trazer os dados e usei a biblioteca tkinter para deixar mais interativo
  
-![image](https://user-images.githubusercontent.com/39930158/202792666-156c1342-ad09-464f-acf4-16dc419df51b.png)
+![1](https://user-images.githubusercontent.com/39930158/208926324-4eeb760b-f371-4798-a6bb-f768f76a5e26.png)
 
 ## Funcionamento
 
 Basta digitar o cep desejado que ele vai realizar a busca e exibir o resultado
 
-![image](https://user-images.githubusercontent.com/39930158/202793128-9c03fa3c-af4c-496f-ad71-ea23f7b89a30.png)
+![2](https://user-images.githubusercontent.com/39930158/208926379-efcc2d5c-99fb-47d2-aca6-42e5d00113a4.png)
 
 Caso o cep informando esteja faltando caractere ou incorreto ele avisa
 
-![image](https://user-images.githubusercontent.com/39930158/202795785-b52ab1ad-981f-490b-805e-c6969aa17053.png)
+![3](https://user-images.githubusercontent.com/39930158/208926414-1d17dc63-a533-497b-8e07-8d8d6bf3db4e.png)
