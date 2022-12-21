@@ -52,4 +52,6 @@ class main:
 root = Tk()
 main(root)
 root.geometry("300x300")
+root.iconbitmap("icone.ico")
+root.title("Consulta CEP")
 root.mainloop()
