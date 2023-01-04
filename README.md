@@ -8,7 +8,7 @@
 
 ## Funcionamento
 
-Basta digitar o cep desejado que ele vai realizar a busca e exibir o resultado
+Basta digitar o cep desejado e clicar em pesquisar que ele vai realizar a busca e exibir o resultado
 
 ![2](https://user-images.githubusercontent.com/39930158/208926379-efcc2d5c-99fb-47d2-aca6-42e5d00113a4.png)
 
