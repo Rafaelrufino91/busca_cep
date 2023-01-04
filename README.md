@@ -1,6 +1,6 @@
 # Programa para buscar endereços por CEP
 
- Montei esse programa que serve para realizar busca de endereço, através do CEP informando pelo usuario
+ Montei esse programa que serve para realizar busca de endereço, através do CEP informado pelo usuario
  
  Nele eu utilizei a API VIACEP para trazer os dados e usei a biblioteca tkinter para deixar mais interativo
  
