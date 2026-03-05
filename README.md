@@ -1,4 +1,3 @@
-````markdown
 # 🔎 Consulta de Endereço por CEP
 
 Este projeto foi desenvolvido com o objetivo de **praticar Python**, trabalhando com:
